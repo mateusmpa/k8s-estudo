@@ -1,0 +1,305 @@
+history | grep kubectl
+ 9567  brew install kubectl
+ 9575  brew install kubectl
+ 9578  kubectl version --client
+ 9579  kubectl version --short
+ 9580  kubectl cluster-info
+ 9599  brew update kubectl
+ 9600  brew upgrade kubectl
+ 9605  kubectl get nodes
+ 9606  kubectl run nginx-pod --image=nginx:latest
+ 9607  kubectl get pods
+ 9608  kubectl get pods --watch
+ 9610  kubectl get pods
+ 9611  kubectl describe nginx-pod
+ 9612  kubectl get pods
+ 9613  kubectl describe pod nginx-pod
+ 9614  kubectl get pods
+ 9615  kubectl edit pod nginx-pod
+ 9616  kubectl get pods
+ 9617  kubectl describe pod nginx-pod
+ 9619  kubectl apply -f primeiro-pod.yaml
+ 9620  kubectl get pods
+ 9621  kubectl apply -f primeiro-pod.yaml
+ 9622  kubectl get pods -watch
+ 9623  kubectl get pods --watch
+ 9624  kubectl get pods -w
+ 9625  kubectl get pods
+ 9626  kubectl get pods -w
+ 9627  kubectl apply -f primeiro-pod.yaml
+ 9628  kubectl get pods -w
+ 9629  kubectl describe pod nginx-pod
+ 9630  kubectl describe pod primeiro-pod-declarativo
+ 9631  kubectl get pods
+ 9632  kubectl describe pod primeiro-pod-declarativo
+ 9633  kubectl get pods
+ 9634  kubectl delete pod nginx-pod
+ 9635  kubectl get pods
+ 9636  kubectl delete -f primeiro-pod.yaml
+ 9637  kubectl get pods
+ 9638  kubectl apply -f portal-noticias.yaml
+ 9639  kubectl get pods
+ 9640  kubectl get pods -w
+ 9641  kubectl get pods
+ 9642  kubectl describe pod portal-noticias
+ 9643  kubectl exec -it portal-noticias -- bash
+ 9644  kubectl describe pod portal-noticias
+ 9647  kubectl get pods
+ 9648  kubectl get pods -o wide
+ 9649  kubectl delete pod portal-noticias
+ 9650  kubectl get pods -o wide
+ 9651  kubectl apply -f portal-noticias.yaml
+ 9652  kubectl get pods -o wide
+ 9653  kubectl apply -f pod-1.yaml
+ 9654  kubectl apply -f pod-2.yaml
+ 9655  kubectl get pods -o wide
+ 9656  kubectl apply -f pod-2.yaml
+ 9657  kubectl describe pod pod-2
+ 9658  kubectl apply -f svc-pod-2.yaml
+ 9659  kubectl get services
+ 9660  kubectl get services -o wave
+ 9661  kubectl get services
+ 9662  kubectl get service
+ 9663  kubectl get svc
+ 9664  kubectl exec -it pod-1 -- bash
+ 9665  kubectl delete pod-2
+ 9666  kubectl delete pod pod-2
+ 9667  kubectl get pods -o wave
+ 9668  kubectl get pods -o wide
+ 9669  kubectl get svc -o wide
+ 9670  kubectl get svc
+ 9671  kubectl get svc -o wide
+ 9672  kubectl exec -it pod-1 -- bash
+ 9673  kubectl apply -f pod-2.yaml
+ 9674  kubectl get pods -o wide
+ 9675  kubectl exec -it pod-1 -- bash
+ 9676  kubectl apply -f svc-pod-2.yaml
+ 9677  kubectl exec -it pod-1 -- bash
+ 9680  kubectl appy -f svc-pod-1.yaml
+ 9681  kubectl apply -f svc-pod-1.yaml
+ 9682  kubectl get svc
+ 9683  kubectl get svc -w
+ 9684  kubectl get svc --wide
+ 9685  kubectl get svc -o wide
+ 9686  kubectl apply -f svc-pod-1.yaml
+ 9687  kubectl apply -f pod-1.yaml
+ 9688  kubectl apply -f svc-pod-1.yaml
+ 9689  kubectl get services
+ 9690  kubectl get services -o wide
+ 9691  kubectl exec -it portal-noticias -- bash
+ 9692  kubectl get services -o wide
+ 9693  kubectl get nodes -o wide
+ 9694  kubectl apply -f svc-pod-1.yaml
+ 9695  kubectl get svc -o wide
+ 9704  kubectl delete pods --all
+ 9705  kubectl delete svc --all
+ 9710  kubectl apply -f portal-noticias.yaml
+ 9711  kubectl apply -f svc-portal-noticias.yaml
+ 9713  kubectl get pods
+ 9714  kubectl get svc
+ 9715  kubectl get svc -o wide
+ 9716  kubectl get pods -o wide
+ 9717  kubectl exec -it portal-noticias -- bash
+ 9718  kubectl get pods -o wide
+ 9719  kubectl get svc -o wide
+ 9720  kubectl apply -f portal-noticias.yaml
+ 9721  kubectl get nodes -o wide
+ 9724  kubectl get pods -o wide
+ 9725  kubectl apply -f sistema-noticias.yaml
+ 9726  kubectl apply -f svc-sistema-noticias.yml
+ 9727  kubectl get pods -o wide
+ 9728  kubectl get svc -o wide
+ 9729  kubectl exec -it sistema-noticias -- bash
+ 9730  kubectl get svc -o wide
+ 9731  kubectl apply -f sistema-noticias.yaml
+ 9732  kubectl apply -f db-noticias.yaml
+ 9733  kubectl apply -f svc-db-noticias.yaml
+ 9734  kubectl get pods -o wide
+ 9735  kubectl describe pod db-noticias
+ 9736  kubectl get pods -o wide
+ 9737  kubectl describe pod db-noticias
+ 9738  kubectl get svc -o wide
+ 9739  kubectl apply -f db-noticias.yaml
+ 9740  kubectl delete pod db-noticias
+ 9741  kubectl apply -f db-noticias.yaml
+ 9742  kubectl get pods -o wide
+ 9743  kubectl exec -it db-noticias -- bash
+ 9744  kubectl get pods
+ 9745  kubectl exec -it sistema-noticias -- bash
+ 9746  kubectl apply -f db-configmap.yaml
+ 9747  kubectl get cm
+ 9748  kubectl get cm -o wide
+ 9749  kubectl describe configmap db-configmap
+ 9750  kubectl get pods
+ 9751  kubectl delete pod db-noticias
+ 9752  kubectl apply -f db-noticias.yaml
+ 9753  kubectl get pods -o wide
+ 9754  kubectl exec -it db-noticias -- bash
+ 9755  kubectl get pods
+ 9756  kubectl exec -it sistema-noticias -- bash
+ 9757  kubectl get svc -o wide
+ 9758  kubectl apply -f sistema-configmap.yaml
+ 9759  kubectl get configmap
+ 9760  kubectl delete pod sistema-noticias
+ 9761  kubectl apply -f sistema-noticias.yaml
+ 9762  kubectl get pods
+ 9763  kubectl exec -it portal-noticias -- bash
+ 9764  kubectl get svc -o wode
+ 9765  kubectl get svc -o wide
+ 9766  kubectl apply -f portal-configmap.yaml
+ 9767  kubectl get configmap
+ 9768  kubectl delete pod portal-noticias
+ 9769  kubectl apply -f portal-noticias.yaml
+ 9777  kubectl get pods
+ 9778  kubectl delete pod portal-noticias
+ 9779  kubectl get pods
+ 9780  kubectl apply -f portal-noticias-replicaset.yaml
+ 9781  kubectl get pods
+ 9782  kubectl get replicaset
+ 9783  kubectl get replicaset -o wide
+ 9784  kubectl delete pod portal-noticias-replicaset-77llb
+ 9785  kubectl get replicaset -o wide
+ 9786  kubectl get pods
+ 9787  kubectl get pods -w -o wide
+ 9788  kubectl delete pod portal-noticias-replicaset-bt4c5
+ 9789  kubectl apply -f nginx-deployment.yaml
+ 9790  kubectl get pods
+ 9791  kubectl get deployments
+ 9792  kubectl get deployments -o wide
+ 9793  kubectl get rs
+ 9794  kubectl rollout history deployment nginx-deployment
+ 9795  kubectl apply -f nginx-deployment.yaml
+ 9796  kubectl rollout history deployment nginx-deployment
+ 9797  kubectl apply -f nginx-deployment.yaml
+ 9798  kubectl apply -f nginx-deployment.yaml --record
+ 9799  kubectl get pods
+ 9800  kubectl rollout history deployment nginx-deployment
+ 9801  kubectl annotate deployment nginx-deployment kubernetes.io/change-cause="Definindo a imagem com a versão latest"
+ 9802  kubectl rollout history deployment nginx-deployment
+ 9803  kubectl apply -f nginx-deployment.yaml
+ 9804  kubectl rollout history deployment nginx-deployment
+ 9805  kubectl apply -f nginx-deployment.yaml
+ 9806  kubectl rollout history deployment nginx-deployment
+ 9807  kubectl apply -f nginx-deployment.yaml --record
+ 9808  kubectl rollout history deployment nginx-deployment
+ 9809  kubectl get pods
+ 9810  kubectl annotate deployment nginx-deployment kubernetes.io/change-cause="Definindo a imagem com a versão 1"
+ 9811  kubectl rollout history deployment nginx-deployment
+ 9812  kubectl get pod
+ 9813  kubectl describe pod nginx-deployment-7df94d45dc-5zmkv
+ 9814  kubectl rollout history deployment nginx-deployment
+ 9815  kubectl rollout undo deployment nginx-deployment --to-revision=4
+ 9816  kubectl get pod
+ 9817  kubectl describe nginx-deployment-5854cd58bc-cjdnm
+ 9818  kubectl describe pod nginx-deployment-5854cd58bc-cjdnm
+ 9820  kubectl rollout history deployment nginx-deploymen
+ 9837  kubectl get pods
+ 9838  kubectl delete deployment ngins-deployment
+ 9839  kubectl delete deployment nginx-deployment
+ 9840  kubectl get pods
+ 9841  kubectl delete -f portal-noticias-replicaset.yaml
+ 9842  kubectl get pods
+ 9847  kubectl apply -f portal-noticias-deployment.yaml
+ 9848  kubectl get deployments
+ 9849  kubectl get pods
+ 9850  kubectl rollout history deployment portal-noticias-deployment
+ 9851  kubectl annotate deployment portal-noticias-deployment kubernetes.io/change-cause="Criando portal de notícias na versão 1"
+ 9852  kubectl rollout history deployment portal-noticias-deployment
+ 9855  kubectl get pods
+ 9856  kubectl delete pod sistema-noticias
+ 9857  kubectl get pods
+ 9858  kubectl apply -f sistema-noticias-deployment.yaml
+ 9859  kubectl get pods
+ 9861  kubectl get pods
+ 9862  kubectl delete pod db-noticias
+ 9863  kubectl get pods
+ 9864  kubectl apply -f db-noticias-deployment.yaml
+ 9865  kubectl get pods
+ 9866  kubectl annotate deployment sistema-noticias-deployment kubernetes.io/change-cause="Subindo o sistema na versão 1"
+ 9867  kubectl rollout history deployment sistema-noticias-deployment
+ 9868  kubectl annotate deployment db-noticias-deployment kubenetes.io/change-cause="Subindo o banco na versão 1"
+ 9869  kubectl rollout history deployment db-noticias-deployment
+ 9870  kubectl annotate deployment db-noticias-deployment kubernetes.io/change-cause="Subindo o banco na versão 1"
+ 9871  kubectl rollout history deployment db-noticias-deployment
+ 9872  kubectl apply -f pod-volume.yaml
+ 9873  kubectl get pods -o wide
+ 9874  kubectl describe pod pod-volume
+ 9875  kubectl get pods -o wide
+ 9876  kubectl delete pod pod-volume
+ 9877  kubectl get pods -o wide
+ 9878  kubectl apply -f pod-volume.yaml
+ 9879  kubectl get pods -o wide
+ 9880  kubectl describe pod pod-volume
+ 9881  kubectl get pods
+ 9882  kubectl delete pod pod-volume
+ 9883  kubectl apply -f pod-volume.yaml
+ 9884  kubectl get pods
+ 9885  kubectl describe pod pod-volume
+ 9886  kubectl get pods
+ 9887  kubectl exec -it pod-volume --container ngins-container -- bash
+ 9888  kubectl exec -it pod-volume --container nginx-container -- bash
+ 9889  kubectl exec -it pod-volume --container jenkins-container -- bash
+ 9890  kubectl describe pod pod-volume
+ 9891  kubectl exec -it pod-volume --container jenkins-container -- bash
+ 9892  kubectl delete pod pod-volume
+ 9912  kubectl get deployments
+ 9913  kubectl apply -f sistema-noticias-statefulset.yaml
+ 9914  kubectl get pods
+ 9915  kubectl get deployments
+ 9916  kubectl delete deployment sistema-noticias-deployment
+ 9917  kubectl get deployments
+ 9918  kubectl get pods
+ 9919  kubectl delete pod sistema-noticias-statefulset-0
+ 9920  kubectl get pods
+ 9921  kubectl apply -f imagens-pvc.yaml
+ 9922  kubectl apply -f sessao-pvc.yaml
+ 9923  kubectl get pvc
+ 9924  kubectl get pv
+ 9925  kubectl get sc
+ 9926  kubectl get pods
+ 9927  kubectl delete sistema-noticias-statefulset-0
+ 9928  kubectl get statefulset
+ 9929  kubectl delete statefulset sistema-noticias-statefulset
+ 9930  kubectl get statefulset
+ 9931  kubectl apply -f sistema-noticias-statefulset.yaml
+ 9932  kubectl get statefulset
+ 9933  kubectl get pods
+ 9934  kubectl delete pod sistema-noticias-statefulset-0
+ 9935  kubectl get pods
+ 9936  kubectl delete pod sistema-noticias-statefulset-0
+ 9937  kubectl get pods
+ 9938  kubectl describe pod sistema-noticias-statefulset-0
+ 9941  kubectl get pods
+ 9942  kubectl apply -f portal-noticias-deployment.yaml
+ 9943  kubectl get pods
+ 9944  kubectl describe pod portal-noticias-deployment
+ 9945  kubectl apply -f sistema-noticias-statefulset.yaml
+ 9946  kubectl get pods
+ 9947  kubectl apply -f sistema-noticias-statefulset.yaml
+ 9948  kubectl apply -f portal-noticias-deployment.yaml
+ 9949  kubectl get pods
+ 9959  kubectl apply -f portal-noticias-deployment.yaml
+ 9960  kubectl apply -f portal-noticias-hpa.yaml
+ 9961  kubectl get hpa
+ 9962  kubectl get pods
+ 9963  kubectl get hpa
+ 9964  kubectl describe hpa portal-noticias-hpa
+ 9965  kubectl apply -f components.yaml
+ 9966  kubectl describe hpa portal-noticias-hpa
+ 9967  kubectl get hpa
+ 9968  kubectl describe hpa portal-noticias-hpa
+ 9969  kubectl get hpa
+ 9970  kubectl get hpa -w
+ 9971  kubectl get hpa
+ 9972  kubectl get hpa -w
+ 9974  kubectl get hpa -w
+ 9977  kubectl get nodes -o wide
+ 9984  kubectl get pods
+ 9985  kubectl get statefulset
+ 9986  kubectl delete statefulset sistema-noticias-statefulset
+ 9987  kubectl get pods
+ 9988  kubectl get deployment
+ 9989  kubectl delete deployent --all
+ 9990  kubectl delete deployment --all
+ 9991  kubectl get deployment
+ 9992  kubectl get pods
